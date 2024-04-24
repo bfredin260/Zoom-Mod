@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "fpscounter",
+	"version": "${version}",
+	"name": "FPS Counter",
+	"description": "Too bored to wait for the mod to update, so I am trying to make it myself",
+	"authors": [
+		"Braedon Fredin!"
+	],
+	"contact": {
+		"homepage": "https://linktr.ee/krunchy",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/fpscounter/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.bfredin.fpscounter.FPSCounter"
+		],
+        "client": [
+          "net.bfredin.fpscounter.FPSCounterClient"
+        ],
+		"fabric-datagen": [
+			"net.bfredin.fpscounter.FPSCounterDataGenerator"
+		]
+	},
+	"mixins": [
+		"fpscounter.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
