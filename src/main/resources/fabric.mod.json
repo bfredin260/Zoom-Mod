@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "fpscounter",
+	"id": "zoommod",
 	"version": "${version}",
-	"name": "FPS Counter",
+	"name": "Zoom Mod",
 	"description": "Too bored to wait for the mod to update, so I am trying to make it myself",
 	"authors": [
 		"Braedon Fredin!"
@@ -12,21 +12,20 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",
-	"icon": "assets/fpscounter/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.bfredin.fpscounter.FPSCounter"
+			"net.bfredin.zoommod.ZoomMod"
 		],
         "client": [
-          "net.bfredin.fpscounter.FPSCounterClient"
+          "net.bfredin.zoommod.ZoomModClient"
         ],
 		"fabric-datagen": [
-			"net.bfredin.fpscounter.FPSCounterDataGenerator"
+			"net.bfredin.zoommod.ZoomModDataGenerator"
 		]
 	},
 	"mixins": [
-		"fpscounter.mixins.json"
+		"zoommod.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.10",
